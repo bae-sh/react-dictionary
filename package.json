@@ -1,0 +1,17 @@
+{
+  "name": "react-dictionary",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "lib/index.ts",
+  "author": "bae-sh <hyeon1293@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "@types/react": "^18.2.19",
+    "typescript": "^4.9.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
