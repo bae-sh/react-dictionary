@@ -2,6 +2,12 @@
 
 This package facilitates the parsing and subsequent highlighting of words found within a designated dictionary. Upon clicking a highlighted word, an accompanying image is presented alongside a corresponding description.
 
+<p>
+  <img width='400' src="https://github.com/bae-sh/react-dictionary/assets/37887690/7449bea3-a8bb-4b41-9a0e-7809b199d2d8" alt="react-dictionary" />
+</p>
+
+
+
 ## Installation
 
 You can install react-dictionary using npm:
@@ -42,6 +48,7 @@ function App() {
 
 export default App;
 ```
+
 
 ### Type
 
