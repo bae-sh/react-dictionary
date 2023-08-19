@@ -1,5 +1,6 @@
 import { BookIcon, LineIcon } from '../icons';
 import { IDictionary } from '../type';
+import hasJongSeong from './hasJongSeong';
 
 interface IProps {
   index: number;
@@ -7,6 +8,8 @@ interface IProps {
   match: string;
 }
 function descriptionModal({ index, dictionary, match }: IProps) {
+  const title = `${match}${hasJongSeong(match) ? '이' : '가'} 뭔가요?`;
+
   return `<div class='wrapper'>
             <span class="highlight active">${match}</span>
             
@@ -14,7 +17,7 @@ function descriptionModal({ index, dictionary, match }: IProps) {
               <div class="title">
                 <div>
                   ${BookIcon}
-                  <span>${match}이 뭔가요?</span>
+                  <span>${title}</span>
                 </div>
                 <button class="close">이해했어요!</button>
               </div>
