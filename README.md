@@ -6,8 +6,6 @@ This package facilitates the parsing and subsequent highlighting of words found 
   <img width='400' src="https://github.com/bae-sh/react-dictionary/assets/37887690/7449bea3-a8bb-4b41-9a0e-7809b199d2d8" alt="react-dictionary" />
 </p>
 
-
-
 ## Installation
 
 You can install react-dictionary using npm:
@@ -49,7 +47,6 @@ function App() {
 export default App;
 ```
 
-
 ### Type
 
 ```typescript
@@ -65,3 +62,10 @@ type HighlighterProps = {
   children: React.ReactNode;
 };
 ```
+
+## Design Credits
+
+**Designed by:**
+
+- 박제민 (jemin9852@gmail.com)
+- 조아연 (ayeonee26@gmail.com)
