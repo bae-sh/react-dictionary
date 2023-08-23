@@ -6,7 +6,7 @@ import { IDictionary } from '../type';
 interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   dictionary: IDictionary[];
   isActivate?: boolean;
-  children?: string;
+  children?: string | null;
 }
 function Highlighter({ dictionary, children = '', isActivate = false }: IProps) {
   const [clickedWord, setClickedWord] = useState('');
@@ -36,7 +36,7 @@ function Highlighter({ dictionary, children = '', isActivate = false }: IProps) 
     document.querySelector('.close')?.addEventListener('click', closeDictionary);
   }, [clickedWord]);
 
-  return <div dangerouslySetInnerHTML={{ __html: innerHTML }} onClick={onClickHandler} />;
+  return <div dangerouslySetInnerHTML={{ __html: innerHTML ?? '' }} onClick={onClickHandler} />;
 }
 
 export default Highlighter;
