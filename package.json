@@ -1,6 +1,6 @@
 {
   "name": "react-dictionary",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "type": "module",
   "main": "lib/index.ts",
   "author": "bae-sh <hyeon1293@gmail.com>",

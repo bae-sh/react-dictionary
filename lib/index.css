@@ -57,16 +57,18 @@
   letter-spacing: -0.42px;
 }
 
-.close {
+.close-button {
   display: inline-flex;
   padding: 5px 9px;
   justify-content: center;
   align-items: center;
   gap: 8px;
 
+  font-size: 12px;
   border-radius: 2px;
   background-color: #595c61;
   color: #ffffff;
+  font-weight: 400;
 
   border: 0px;
 
