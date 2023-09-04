@@ -3,8 +3,9 @@
 This package facilitates the parsing and subsequent highlighting of words found within a designated dictionary. Upon clicking a highlighted word, an accompanying image is presented alongside a corresponding description.
 
 <p>
-  <img width='400' src="https://github.com/bae-sh/react-dictionary/assets/37887690/7449bea3-a8bb-4b41-9a0e-7809b199d2d8" alt="react-dictionary" />
+  <img width='400' src="https://github.com/bae-sh/react-dictionary/assets/37887690/52a8bfd2-9f11-4ee4-a5c0-2bff85301b40" alt="react-dictionary" />
 </p>
+
 
 ## Installation
 
@@ -22,15 +23,16 @@ import { Highlighter } from 'react-dictionary';
 
 const dictionary = [
   {
-    word: '트림',
+    word: 'hello',
     description:
-      '트림(trim)이란, 자동차 한 모델 안에서의 등급을 말해요. 자동차 트림에 따라 선택할 수 있는 편의사양과 옵션등이 정해져요.',
+      '"Hello" is a common greeting in the English language. Its a way to say "hi" or to initiate a friendly conversation with someone. When you say "hello" to someone, you are typically expressing a friendly and polite acknowledgment of their presence or initiating a conversation with them.',
+    imgUrl:
+      'https://img.freepik.com/free-vector/v813-aew-05_53876-166405.jpg?w=2000&t=st=1693808537~exp=1693809137~hmac=5da4c630c2d9098fc7c4d8df88fb7fa1e83e56555e441e8708e10772cf588396',
   },
   {
-    word: '클러스터',
+    word: 'foo',
     description:
-      '클러스터란, 자동차에 적용된 편의, 안전 시스템의 상태 정보를 확인할 수 있는 장치로, 주행 관련 정보를 상황에 맞게 제공해줘요.',
-    imgUrl: '/src/img.png',
+      'In computer programming and related fields, "foo" is often used as a placeholder or a generic name when referring to variables, functions, or code snippets. It is a part of a set of placeholder names that also includes "bar" and "baz."',
   },
 ];
 
@@ -59,7 +61,8 @@ type Dictionary = {
 type HighlighterProps = {
   dictionary: Dictionary[];
   isActivate: boolean;
-  children: React.ReactNode;
+  children?: string | null;
+  language?: 'en' | 'ko';
 };
 ```
 
