@@ -39,9 +39,9 @@ const dictionary = [
 function App() {
   return (
     <Highlighter dictionary={dictionary} isActivate={true}>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui quis quibusdam delectus
-      perspiciatis amet 트림 ab obcaecati cum, autem libero. Dolore voluptatum voluptate similique
-      officia. Distinctio excepturi클러스터 id vitae inventore quisquam.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsam distinctio vero nesciunt,
+      sunt amet, officiis ad debitis sapiente hello quibusdam Booperspiciatis! Tempore, dolores
+      aperiam? Ipsa reiciendis quasi enim pariatur foomaxime?
     </Highlighter>
   );
 }
