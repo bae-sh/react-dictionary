@@ -3,4 +3,4 @@ package-lock.json
 tsconfig.json
 yarn.lock
 build.js
-lib
+lib/

@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface HighlightedWordProps {
   word: string;
   isActivate: boolean;

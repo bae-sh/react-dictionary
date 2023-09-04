@@ -1,3 +1,5 @@
+import React from 'react';
+
 import BookIcon from '../icons/BookIcon';
 import LineIcon from '../icons/LineIcon';
 import { IDictionary } from '../type';
@@ -13,7 +15,7 @@ const buttonName = {
   en: 'Got it !',
 };
 function DescriptionModal({ dictionary, clickedWord, language }: IProps) {
-  if (clickedWord === '') return;
+  if (clickedWord === '') return null;
 
   const { word, description, imgUrl } = dictionary.filter(
     (item: IDictionary) => item.word === clickedWord,
@@ -32,7 +34,7 @@ function DescriptionModal({ dictionary, clickedWord, language }: IProps) {
           <button className="close">{buttonName[language]}</button>
         </div>
         <LineIcon />
-        {imgUrl && <img src={imgUrl} alt="image" className="description" />}
+        {imgUrl && <img src={imgUrl} alt="image" className="description-img" />}
 
         <p className="content">{description}</p>
       </div>

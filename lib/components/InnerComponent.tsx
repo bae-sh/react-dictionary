@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { IDictionary } from '../type';
 
 interface InnerComponentProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -14,7 +16,7 @@ function InnerComponent({
   isActivate = false,
   onClick,
 }: InnerComponentProps) {
-  if (!children) return;
+  if (!children) return null;
   if (!isActivate) return <>{children}</>;
 
   const keyArr = dictionary.map((item: IDictionary) => item.word);
