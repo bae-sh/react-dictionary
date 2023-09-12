@@ -5,8 +5,9 @@
     "jsx": "react",
     "lib": ["es5", "es6", "dom"],
     "declaration": true,
-    "outDir": "dist",
-    "strict": true
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "node"
   },
-  "include": ["./**/*"]
+  "include": ["./lib/*"]
 }

@@ -1,6 +1,4 @@
-'use strict';
-
-var React = require('react');
+import React, { useState, useEffect } from 'react';
 
 function styleInject(css, ref) {
   if ( ref === void 0 ) ref = {};
@@ -98,7 +96,7 @@ function getTitle({ word, language }) {
 }
 
 function Highlighter({ dictionary, children = '', isActivate = false, language = 'en' }) {
-    const [clickedWord, setClickedWord] = React.useState('');
+    const [clickedWord, setClickedWord] = useState('');
     const onClickHandler = (event) => {
         const target = event.target;
         event.stopPropagation();
@@ -110,7 +108,7 @@ function Highlighter({ dictionary, children = '', isActivate = false, language =
     const closeDictionary = () => {
         setClickedWord('');
     };
-    React.useEffect(() => {
+    useEffect(() => {
         var _a;
         if (!document.querySelector('.close'))
             return;
@@ -121,5 +119,5 @@ function Highlighter({ dictionary, children = '', isActivate = false, language =
         React.createElement(DescriptionModal, { clickedWord: clickedWord, dictionary: dictionary, language: language })));
 }
 
-exports.Highlighter = Highlighter;
+export { Highlighter };
 //# sourceMappingURL=index.js.map
