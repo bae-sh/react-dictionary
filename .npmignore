@@ -9,3 +9,5 @@ rollup.config.mjs
 *.tgz
 *.test.ts
 babel.config.json
+
+.github/
